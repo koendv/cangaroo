@@ -27,6 +27,8 @@ public slots:
 private slots:
     void updateUI();
 
+    void on_setFilterPushButton_clicked();
+
 private:
     Ui::GenericCanSetupPage *ui;
     MeasurementInterface *_mi;

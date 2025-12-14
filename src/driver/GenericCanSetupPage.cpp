@@ -2,6 +2,7 @@
 #include "ui_GenericCanSetupPage.h"
 #include <core/Backend.h>
 #include <driver/CanInterface.h>
+#include <driver/HardwareFilter.h>
 #include <core/MeasurementInterface.h>
 #include <window/SetupDialog/SetupDialog.h>
 #include <QList>
@@ -321,3 +322,11 @@ Backend &GenericCanSetupPage::backend()
 {
     return Backend::instance();
 }
+
+/* set hardware filter */
+void GenericCanSetupPage::on_setFilterPushButton_clicked()
+{
+    CanInterface *intf = backend().getInterfaceById(_mi->canInterface());
+    setHardwareFilter(intf, ui->hwFilterLineEdit->text());
+}
+

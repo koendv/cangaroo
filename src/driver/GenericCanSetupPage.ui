@@ -191,8 +191,8 @@
   <widget class="QLabel" name="label_11">
    <property name="geometry">
     <rect>
-     <x>9</x>
-     <y>230</y>
+     <x>10</x>
+     <y>250</y>
      <width>61</width>
      <height>16</height>
     </rect>
@@ -205,9 +205,9 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>230</y>
+     <y>250</y>
      <width>411</width>
-     <height>185</height>
+     <height>238</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="vbOptions">
@@ -400,6 +400,42 @@
    </property>
    <property name="text">
     <string>CAN Setting / CAN FD Arbitration Phase Setting</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="hwFilterLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>500</y>
+     <width>411</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="setFilterPushButton">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>530</y>
+     <width>88</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set Filter</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>500</y>
+     <width>121</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hardware Filter:</string>
    </property>
   </widget>
  </widget>
